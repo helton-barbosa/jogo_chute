@@ -5,7 +5,19 @@ print("*******BEM-VINDO AO JOGO DO CHUTE!********")
 print("******************************************")
 
 numero_secreto = random.randrange(1, 100)
-tentativas = 5
+tentativas = 0
+
+print("Qual o nível de dificuldade que deseja?")
+print("(1) Fácil | (2) Médio | (3) Difícil")
+
+nivel = int(input("Escolha o nível: "))
+
+if nivel == 1:
+    tentativas = 20
+elif nivel == 2:
+    tentativas = 10
+else:
+    tentativas = 5
 
 for rodada in range(1, tentativas + 1) :
     print("Tentativa {} de {}".format(rodada, tentativas))
