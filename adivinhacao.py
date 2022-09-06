@@ -1,9 +1,11 @@
+import random
+
 print("******************************************")
 print("*******BEM-VINDO AO JOGO DO CHUTE!********")
 print("******************************************")
 
-numero_secreto = 81
-tentativas = 3
+numero_secreto = round(random.random() * 100)
+tentativas = 5
 
 for rodada in range(1, tentativas + 1) :
     print("Tentativa {} de {}".format(rodada, tentativas))
