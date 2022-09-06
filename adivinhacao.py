@@ -4,7 +4,7 @@ print("******************************************")
 print("*******BEM-VINDO AO JOGO DO CHUTE!********")
 print("******************************************")
 
-numero_secreto = round(random.random() * 100)
+numero_secreto = round(random.uniform(1, 100))
 tentativas = 5
 
 for rodada in range(1, tentativas + 1) :
