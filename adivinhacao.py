@@ -43,4 +43,4 @@ for rodada in range(1, tentativas + 1) :
         pontos_perdidos = abs(numero_secreto - chute)
         pontos = pontos - pontos_perdidos
 
-print("###Fim do jogo###")
+print("Fim do jogo!")
